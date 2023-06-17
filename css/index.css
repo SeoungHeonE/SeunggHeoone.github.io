@@ -1,0 +1,671 @@
+/********************************************************
+                        bg img
+********************************************************/
+body {
+    height: 2000px;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+#scroll-btn {
+    cursor: pointer;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px #6d6d6d59;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: background-color 0.5s, opacity 0.5s, transform 0.5s;
+}
+
+#scroll-btn:hover {
+    color: #fff;
+    background-color: #FAA56E;
+    border: 1px solid #fff;
+}
+
+#scroll-btn.show {
+    opacity: 1;
+    transition: background-color 0.5s, opacity 1s, transform 1s;
+}
+
+/********************************************************
+                        header
+********************************************************/
+
+#header-Wrap {
+    position: fixed;
+    width: 1570px;
+    height: 52px;
+    left: 175px;
+    top: 45px;
+    z-index: 1;
+
+    background: #000000;
+    border-radius: 44px;
+    transition: all 0.3s ease-in-out;
+}
+
+#header {
+    position: relative;
+    top: 25%;
+}
+
+#header img {
+    position: absolute;
+    width: 100px;
+    left: 5%;
+}
+
+#nav-menu {
+    position: absolute;
+    width: 700px;
+    height: 20.13px;
+    right: 0;
+
+    display: flex;
+}
+
+#nav-menu li {
+    padding: 3px 30px 0 30px;
+
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#nav-menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#nav-menu li a:hover {
+    color: #e07491 !important;
+    /* color: #874fc7; */
+    /* color: #EFA2B7; */
+    transition: all 0.3s;
+}
+
+
+/********************************************************
+                    music play
+********************************************************/
+#play {
+    position: fixed;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    right: 70px;
+    bottom: 70px;
+    transform: translate(50%, 50%);
+
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+
+    border: solid 2.2px #fff;
+    border-radius: 40px;
+    /* background: none; */
+
+    transition: all 0.3s ease-in-out;
+}
+
+#play li img {
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#play:hover {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 20px #EFA2B7;
+}
+
+/********************************************************
+                        section 1
+********************************************************/
+#Invitation {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../image/Festival2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contents {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 네온 루시 페스티벌 */
+/* #contents h1 {
+    position: absolute;
+    text-align: center;
+
+    font-family: 'Neoneon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 49.7448px #EFA2B7, 0px 0px 28.4256px #EFA2B7, 0px 0px 16.5816px #EFA2B7, 0px 0px 8.2908px #EFA2B7, 0px 0px 2.3688px #EFA2B7, 0px 0px 1.1844px #EFA2B7;
+} */
+
+#solid {
+    position: absolute;
+}
+
+#solid a {
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    cursor: default;
+
+    font-family: 'Neoneon';
+    font-weight: 400;
+    font-size: 70px;
+    text-decoration: none;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px #EFA2B7, 0px 0px 20px #EFA2B7, 0px 0px 15px #EFA2B7, 0px 0px 6px #EFA2B7, 0px 0px 2px #EFA2B7, 0px 0px 1.1px #EFA2B7;
+
+    animation: neonEffect 5s infinite;
+}
+
+@keyframes neonEffect {
+
+    0%,
+    10%,
+    70%,
+    100% {
+        text-shadow:
+            0px 0px 20px transparent,
+            0px 0px 20px transparent,
+            0px 0px 15px transparent,
+            0px 0px 6px transparent,
+            0px 0px 2px transparent,
+            0px 0px 1px transparent;
+    }
+
+    20%,
+    40%,
+    60% {
+        text-shadow:
+            0px 0px 20px #EFA2B7,
+            0px 0px 20px #EFA2B7,
+            0px 0px 15px #EFA2B7,
+            0px 0px 6px #EFA2B7,
+            0px 0px 2px #EFA2B7,
+            0px 0px 1px #EFA2B7;
+    }
+
+    30%,
+    50% {
+        text-shadow:
+            0px 0px 20px transparent,
+            0px 0px 20px transparent,
+            0px 0px 15px transparent,
+            0px 0px 6px transparent,
+            0px 0px 2px transparent,
+            0px 0px 1px transparent;
+    }
+}
+
+#text {
+    padding-top: 10px;
+}
+
+#solid a span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #7fa8e7, #aeb9df, #e4819b);
+    box-shadow: 0 0 10px rgba(207, 230, 230, 0.699), 0 0 10px rgba(255, 255, 255, 0.507);
+    animation: animate1 3s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#solid a span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #7fa8e7, #aeb9df, #e4819b);
+    box-shadow: 0 0 10px rgba(207, 230, 230, 0.699), 0 0 10px rgba(255, 255, 255, 0.507);
+    animation: animate2 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+#solid a span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, #7fa8e7, #aeb9df, #e4819b);
+    box-shadow: 0 0 10px rgba(207, 230, 230, 0.699), 0 0 10px rgba(255, 255, 255, 0.507);
+    animation: animate3 3s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#solid a span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, #7fa8e7, #aeb9df, #e4819b);
+    box-shadow: 0 0 10px rgba(207, 230, 230, 0.699), 0 0 10px rgba(255, 255, 255, 0.507);
+    animation: animate4 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* 페스티벌 멘트 및 기간*/
+#contents p {
+    position: absolute;
+    width: 420px;
+    height: 27px;
+    top: 620px;
+
+    text-align: center;
+
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 38.5056px #616161, 0px 0px 22.0032px #616161, 0px 0px 12.8352px #616161, 0px 0px 6.4176px #616161, 0px 0px 1.8336px #616161, 0px 0px 0.9168px #616161;
+}
+
+#contents p:nth-of-type(2) {
+    position: absolute;
+    width: 420px;
+    height: 27px;
+    top: 660px;
+
+    text-align: center;
+}
+
+/********************************************************
+                        section 2
+********************************************************/
+#Team {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+
+    background-color: #000000;
+    border-bottom: solid 8px #9FC3F8;
+}
+
+#Team .TeamIntroduction {
+    text-align: center;
+    position: sticky;
+    padding-top: 3%;
+    top: 0;
+}
+
+#Team .teamName {
+    font-family: 'Neoneon';
+    font-weight: 400;
+    font-size: 70px;
+    color: white;
+
+    text-shadow: 0px 0px 46.2672px #4999EA, 0px 0px 26.4384px #4999EA, 0px 0px 15.4224px #4999EA, 0px 0px 7.7112px #4999EA, 0px 0px 2.2032px #4999EA, 0px 0px 1.1016px #4999EA;
+}
+
+#Team .introductionText {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+#canvas {
+    top: 0;
+    left: 0;
+}
+
+/********************************************************
+                    section 2 team img
+********************************************************/
+
+.slider {
+    margin-top: 2%;
+    display: flex;
+    text-align: center;
+    background: #000;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    z-index: 10;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center center;
+    transition: width .8s ease, opacity .5s ease;
+}
+
+.slide:hover {
+    width: 300%;
+}
+
+.slider h2 {
+    position: absolute;
+    height: 20px;
+    /* opacity: 0; */
+    bottom: 0;
+
+    color: transparent;
+    font-family: 'NanumBarunGothic';
+    font-size: 34px;
+    font-weight: 400;
+    transition: opacity .5s ease-in-out;
+}
+
+.slide:hover h2 {
+    width: 100%;
+    height: 670px;
+    padding-top: 40px;
+    /* opacity: 1; */
+    color: #fff;
+    background-color: #00000085;
+    transition: opacity .5s, height .35s ease-in-out;
+
+    text-shadow: 0px 0px 46.2672px #4999EA, 0px 0px 26.4384px #4999EA, 0px 0px 15.4224px #4999EA, 0px 0px 7.7112px #4999EA, 0px 0px 2.2032px #4999EA, 0px 0px 1.1016px #4999EA;
+}
+
+.slide:hover h2.show {
+    display: block;
+}
+
+
+.text_bg {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #202020;
+    border-radius: 23px;
+    transition: opacity .25s ease-in-out;
+}
+
+.slide:hover .text_bg {
+    width: 0;
+    height: 0;
+    animation: size .45s forwards;
+}
+
+@keyframes size {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 70vh;
+        height: 40vh;
+        opacity: 1;
+    }
+}
+
+/********************************************************
+                        section 3
+********************************************************/
+#festival_explanation {
+    position: relative;
+    width: 100%;
+    height: 700vh;
+
+    background-color: #000;
+}
+
+#festival_explanation .explanation {
+    height: 80vh;
+    text-align: center;
+    position: sticky;
+    margin-top: -30%;
+    padding-top: 5%;
+    top: 0;
+}
+
+#festival_explanation .details {
+    font-family: 'Neoneon';
+    font-weight: 400;
+    font-size: 70px;
+    color: white;
+
+    text-shadow: 0px 0px 46.2672px #4999EA, 0px 0px 26.4384px #4999EA, 0px 0px 15.4224px #4999EA, 0px 0px 7.7112px #4999EA, 0px 0px 2.2032px #4999EA, 0px 0px 1.1016px #4999EA;
+}
+
+#festival_explanation .explanationText {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    margin-top: 30px;
+}
+
+#festival_explanation .explanation.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+#festival_explanation .explanation.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+
+.canvas2 {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+/********************************************************
+                        section 4
+********************************************************/
+#songOrder {
+    height: 150vh;
+    background:  radial-gradient(201.76% 201.76% at 50% 18.24%, #26103F 0%, #000000 65.87%);
+    /* border: solid 1px red;  */
+}
+
+
+
+/********************************************************
+                        section 5
+********************************************************/
+#video-Wrap {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background: radial-gradient(214.54% 214.54% at 50% 93.24%, #26103F 0%, #000000 69.57%);
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 0px 0px 20px #ffffff; */
+}
+
+
+/********************************************************
+                        section 6
+********************************************************/
+/* #share-Warp {
+    width: 100%;
+    height: 500px;
+} */
+
+
+/********************************************************
+                        footer
+********************************************************/
+
+footer {
+    height: 600px;
+    background: url(../image/LucyPhoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.Transparency {
+    width: 100%;
+    height: 600px;
+    background-color: #000000cc;
+}
+
+
+#map {
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+/********************************************************
+                    arrow down
+********************************************************/
+
+.arrowDown {
+    position: relative;
+    top: 400px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+
+    /* arrow image */
+    background-image: url(../image/arrowDown.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.arrowDown:hover {
+    cursor: pointer;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* font Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+
+/* font 나눔고딕 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+

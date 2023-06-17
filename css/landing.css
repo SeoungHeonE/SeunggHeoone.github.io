@@ -1,0 +1,149 @@
+/********************************************************
+                        bg img
+********************************************************/
+/* body {
+    background: linear-gradient(45deg, #c352df, #e05e90, #46add3);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    animation: gradient 12s ease infinite;
+    height: auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+body {
+    background-image: url(../Gif/waterfestival.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+#bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/********************************************************
+                        play
+********************************************************/
+#play {
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+
+    border: solid 2px #fff;
+    background: none;
+    border-image: linear-gradient(to right, #7fa8e7, #aeb9df, #e4819b) 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#play:hover {
+    font-size: 15px;
+    width: 110px;
+    height: 50px;
+}
+
+
+/********************************************************
+                        border
+********************************************************/
+
+.circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    border: solid 4px #fff;
+    border-image: linear-gradient(to right, #7fa8e7, #aeb9df, #e4819b) 1;
+    box-shadow: 0 0 50px rgba(207, 230, 230, 0.699), 0 0 10px rgba(255, 255, 255, 0.507);
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+.circle:hover {
+    width: 270px;
+    height: 270px;
+}
+/********************************************************
+                    LUCY TEXT
+********************************************************/
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px; /* 요소의 높이의 반만큼 위로 이동 */
+    margin-left: -95px; /* 요소의 너비의 반만큼 왼쪽으로 이동 */
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+
+    background: linear-gradient(45deg, #6193dd -37.77%, #aeb9df 12.78%, #db5277 91.49%);
+    /* background: linear-gradient(45deg, #46add3 -37.77%, #c352df 12.78%, #e05e90 91.49%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.507), 0 0 100px rgba(255, 255, 255, 0.507);
+
+    animation: bounce 0.4s ease-in infinite;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    70% {
+        transform: scale(0.85);
+    }
+
+    90% {
+        transform: scale(0.9);
+    }
+}
+
+
+
+/* font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

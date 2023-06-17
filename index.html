@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="./favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- title -->
+    <title>LUCY</title>
+    <script>
+        document.cookie = "safeCookie1=foo; SameSite=Lax";
+        document.cookie = "safeCookie2=foo";
+        document.cookie = "crossCookie=bar; SameSite=None; Secure";
+    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/album.css">
+    <link rel="stylesheet" href="./css/songOrder.css">
+    <!-- font 나눔스퀘어 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header-Wrap">
+        <div id="header">
+            <!-- logo img -->
+            <a href="index.html"><img src="./image/Logo.png" alt="Logo"></a>
+            <!-- nav -->
+            <ul id="nav-menu">
+                <li><a href="#Invitation">Invitation</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#festival_explanation">Explanation</a></li>
+                <li><a href="#songOrder">Song Order</a></li>
+                <li><a href="#section5">Video</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- section 1 -->
+    <section id="Invitation">
+        <div id="contents">
+            <!-- neon -->
+            <div id="solid">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div id="text">LUCY SUMMER FESTIVAL</div>
+                </a>
+            </div>
+            <!-- <h1>LUCY SUMMER FESTIVAL</h1> -->
+            <p>루시 여름 축제에 여러분들을 초대합니다!</p>
+            <p>기간 : 2023.05.01 ~ 06.21</p>
+            <!-- arrow down -->
+            <div class="arrowDown bounce" onclick="scrollToNextSection()"></div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section id="Team">
+        <canvas id="canvas" width="1920" height="390"></canvas>
+
+        <div class="TeamIntroduction">
+            <h2 class="teamName">team lucy</h2>
+            <p class="introductionText">
+                바이올린, 드럼, 베이스, 기타로 이루어진 밴드 그룹 루시를 소개합니다!
+            </p>
+
+            <ul class="slider">
+                <li class="slide" style="background-image:url(./image/YeChan.jpg);">
+                    <h2 class="show">신예찬</h2>
+                    <ul class="text_bg">
+                        <li></li>
+                    </ul>
+                </li>
+
+                <li class="slide" style="background-image:url(./image/SangYeop.jpg);">
+                    <h2 class="show">최상엽</h2>
+                    <ul class="text_bg"></ul>
+                </li>
+
+                <li class="slide" style="background-image:url(./image/WonSang.jpg);">
+                    <h2 class="show">조원상</h2>
+                    <ul class="text_bg"></ul>
+                </li>
+
+                <li class="slide" style="background-image:url(./image/GwangIl.jpg);">
+                    <h2 class="show">신광일</h2>
+                    <ul class="text_bg"></ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section id="festival_explanation">
+        <canvas class="canvas2" width="1920" height="1080"></canvas>
+
+        <div class="explanation">
+            <h2 class="details">explanation</h2>
+            <p class="explanationText">
+                LUCY SUMMER FESTIVAL을 100% 즐기기 위한 공지사항을 확인해보세요
+            </p>
+
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section id="songOrder">
+        <div id="product" class="inner">
+            <h1 class="songOrder-text">SONG ORDER</h1>
+
+            <!-- <h2 class="center titleText">OUR PRODUCT INNOVATIONS</h2>
+            <p class="center">끊임없는 기술 혁신으로 미래 성장 동력을 지속 발굴합니다.</p> -->
+            <div id="imgSet">
+                <img src="./image/jogging.png" alt="" id="img0" class="imgPad"><img src="./image/pretty.png" alt=""
+                    id="img1" class="imgPad"><img src="./image/littleStar.png" alt="" id="img2" class="imgPad"><img
+                    src="./image/That.png" alt="" id="img3" class="imgPad"><img src="./image/hero.png" alt="" id="img4"
+                    class="imgPad"><img src="./image/flowering.png" alt="" id="img5" class="imgPad">
+            </div>
+
+            <dl id="textSet">
+                <dt id="dt0" class="active">00 Chlorinated Polyvinyl Chloride</dt>
+                <dd id="dd0" class="whiteText active">
+                    <p><span class="bigText">CPVC</span>한화솔루션 케미칼 부문은 국내에서 처음으로 자체 기술로 CPVC를 생산하는데 성공하고 2017년 울산 2공장에 연산
+                        3만톤
+                        규모의 공장을 건설해 생산 중입니다.</p>
+                    <a href="#" id="btn0" class="button pointBg whiteText smallText active">제품상세보기 0</a>
+                    <!-- <audio id="audi0 active" src="./sound/Jogging.mp3" controls></audio> -->
+                </dd>
+
+                <dt id="dt1">01 Eco-DEHCH</dt>
+                <dd id="dd1" class="whiteText">
+                    <p><span class="bigText">Eco-DEHCH</span>Eco-DEHCH는 유해성분인 프탈레이트가 없는 프리미엄 친환경 가소제로, 한화솔루션 케미칼 부문에서
+                        8년간의
+                        연구 끝에 독자 개발에 성공했습니다.</p>
+                    <a href="#" id="btn1" class="button pointBg whiteText smallText">제품상세보기 1</a>
+                </dd>
+
+                <dt id="dt2">02 수첨수지</dt>
+                <dd id="dd2" class="whiteText">
+                    <p><span class="bigText">수첨수지</span>한화솔루션 케미칼 부문은 다양한 조건에 맞춰 접착성을 조절할 수 있는 응용 기술을 확보하여 여수 국가산업단지 내에
+                        연산
+                        5만톤 규모 공장 건설중입니다.</p>
+                    <a href="#" id="btn2" class="button pointBg whiteText smallText">제품상세보기 2</a>
+                </dd>
+
+                <dt id="dt3">02 수첨수지</dt>
+                <dd id="dd3" class="whiteText">
+                    <p><span class="bigText">수첨수지</span>한화솔루션 케미칼 부문은 다양한 조건에 맞춰 접착성을 조절할 수 있는 응용 기술을 확보하여 여수 국가산업단지 내에
+                        연산
+                        5만톤 규모 공장 건설중입니다.</p>
+                    <a href="#" id="btn3" class="button pointBg whiteText smallText">제품상세보기 3</a>
+                </dd>
+
+                <dt id="dt4">02 수첨수지</dt>
+                <dd id="dd4" class="whiteText">
+                    <p><span class="bigText">수첨수지</span>한화솔루션 케미칼 부문은 다양한 조건에 맞춰 접착성을 조절할 수 있는 응용 기술을 확보하여 여수 국가산업단지 내에
+                        연산
+                        5만톤 규모 공장 건설중입니다.</p>
+                    <a href="#" id="btn4" class="button pointBg whiteText smallText">제품상세보기 4</a>
+                </dd>
+
+                <dt id="dt5">02 수첨수지</dt>
+                <dd id="dd5" class="whiteText">
+                    <p><span class="bigText">수첨수지</span>한화솔루션 케미칼 부문은 다양한 조건에 맞춰 접착성을 조절할 수 있는 응용 기술을 확보하여 여수 국가산업단지 내에
+                        연산
+                        5만톤 규모 공장 건설중입니다.</p>
+                    <a href="#" id="btn5" class="button pointBg whiteText smallText">제품상세보기 5</a>
+                </dd>
+            </dl>
+        </div>
+
+    </section>
+
+    <!-- section 5 -->
+    <section id="video-Wrap">
+        <video preload="metadata" width="1920" src="./video/21st_Lucy.mp4#t=0.1" controls></video>
+        <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/UAAWGUWVlZk" title="LUCY - 21세기의 어떤 날 Concert Live Clip (@2023 INSERT COIN: parade)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </section>
+
+    <!-- section 6 -->
+    <!-- <section id="share-Warp">
+    </section> -->
+
+    <footer>
+        <dl class="Transparency">
+            <dt></dt>
+            <dd id="map" style="width: 400px; height: 400px;"></dd>
+        </dl>
+    </footer>
+
+    <!-- 사이트 배경음 -->
+    <audio id="audio" src="./sound/FLARE.mp3" autoplay loop></audio>
+    <ul id="play">
+        <li><img src="./image/music.png" alt=""></li>
+    </ul>
+
+
+    <!-- js -->
+    <script src="./js/headerColor.js"></script>
+    <script src="./js/arrowScorll.js"></script>
+    <script src="./js/TeamLucy.js"></script>
+    <!-- <script src="./js/scrollVideo.js"></script> -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/songOrder.js"></script>
+    <script src="./js/MusicPlayer2.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRivU0YSMe4-AwQs5jNb76j-Xsm29fjjY&callback=initMap&region=kr"></script>
+    <script src="./js/Map.js"></script>
+</body>
+
+</html>
+
+<!-- 구글 api key -->
+<!-- AIzaSyDRivU0YSMe4-AwQs5jNb76j-Xsm29fjjY -->
